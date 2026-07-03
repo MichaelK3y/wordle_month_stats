@@ -3,7 +3,7 @@
 /* =========================================================================
    Wordle month stats
    Veškeré hodnoty se počítají z raw.csv (sloupce: číslo Wordlu, jméno, výsledek).
-   Výsledek 1–6 = dohráno, 7 = nedohráno. Started/Total se ignorují.
+   Výsledek 1–6 = dohráno, 7 = nedohráno.
    ========================================================================= */
 
 const MONTH_NAMES = ['leden','únor','březen','duben','květen','červen',
@@ -34,7 +34,7 @@ const COLS = [
   {key:'in4',        label:'In 4',                    type:'int'},
   {key:'in5',        label:'In 5',                    type:'int'},
   {key:'in6',        label:'In 6',                    type:'int'},
-  {key:'lowest',     label:'Lowest In',               type:'int'},
+  {key:'lowest',     label:'Lowest In',               type:'int', best:'low'},
   {key:'victories',  label:'Victories',               type:'int', best:'high'},
   {key:'diff',       label:'Average diff from lowest',type:'dec', best:'low'},
 ];
